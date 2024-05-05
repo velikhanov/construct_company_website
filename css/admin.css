@@ -1,0 +1,65 @@
+.section{
+  background-color: #000;
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+.crossOut{
+  text-decoration: line-through;
+  text-decoration-color: red;
+  font-weight: bold;
+}
+.table{
+  width: 100%;
+  table-layout: fixed;
+}
+/**/
+.fixedNotif{
+  text-align: center;
+  position: fixed;
+  top: 85px;
+  z-index: 1030;
+}
+.textNotif{
+  font-size: 15px;
+}
+.toast{
+  background-color: transparent;
+}
+.toast-header{
+  border: none;
+  padding: .7rem .75rem;
+  border-radius: 5px;
+  justify-content: space-evenly;
+  background-clip: border-box;
+}
+.tabletext{
+  vertical-align: middle;
+}
+@media only screen and (max-width: 992px),
+only screen and (max-device-width: 992px){
+    .tabletext{
+      font-size: 12.5px;
+    }
+  }
+  @media only screen and (max-width: 525px),
+  only screen and (max-device-width: 525px){
+    .fixedNotif{
+      padding: 0 10px;
+    }
+  }
+  @media only screen and (max-width: 440px),
+  only screen and (max-device-width: 440px){
+    .table{
+      min-width: 250px;
+    }
+    .tabletext{
+      font-size: 10px;
+    }
+    .btn.btn-success.statusBtn{
+      font-size: 10px;
+    }
+    .btn.btn-warning.statusBtn{
+      font-size: 10px;
+    }
+  }
